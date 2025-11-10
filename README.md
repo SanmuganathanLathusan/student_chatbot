@@ -29,9 +29,9 @@ The chatbot provides **accurate, context-aware answers** using **RAG (Retrieval 
 | LLM Model | **OpenAI / (Optional) Groq LLaMA, Mixtral** |
 | Backend Development | **Python** |
 
----
 
-----
+
+---
 ## 📂 Project Structure
 student_chatbot/
 │── app.py 
@@ -39,7 +39,22 @@ student_chatbot/
 │── vectorstore/ 
 │── requirements.txt 
 │── README.md 
------
+----
+
 
 ---
+
+## 🧑‍🎓 How It Works
+
+1. Student logs into the chatbot
+2. Uploads PDF lecture notes (only once)
+3. The system converts text → embeddings → stores in FAISS
+4. Student asks questions in natural language
+5. Chatbot retrieves matching chunks + uses LLM to generate final answer
+
+---
+
+
+
+
 
