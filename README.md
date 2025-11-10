@@ -31,14 +31,15 @@ The chatbot provides **accurate, context-aware answers** using **RAG (Retrieval 
 
 ---
 
-
+----
 ## 📂 Project Structure
 student_chatbot/
-│── app.py # Main Streamlit App UI + Chat Logic
-│── users.json # User Login Credentials
-│── vectorstore/ # Auto-generated Vector Embeddings Cache (FAISS)
-│── requirements.txt # Python Dependencies
-│── README.md # Project Documentation
-
+│── app.py 
+│── users.json 
+│── vectorstore/ 
+│── requirements.txt 
+│── README.md 
+-----
 
 ---
+
