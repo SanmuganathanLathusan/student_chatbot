@@ -1,33 +1,36 @@
-﻿📚 University Student RAG Chatbot
+# 📚 University Student RAG Chatbot
 
-A smart chatbot that allows university students to upload PDF lecture notes and ask questions, and the bot provides accurate, context-based answers using RAG (Retrieval Augmented Generation) and LLMs.
+A smart and interactive chatbot designed for university students to **upload PDF lecture notes** and ask **subject-related questions**.  
+The chatbot provides **accurate, context-aware answers** using **RAG (Retrieval Augmented Generation)** combined with **LLMs**.
 
-🚀 Features
-Feature	Description
-📄 PDF Upload	Students upload subject notes/lecture slides in PDF format
-🔍 RAG Search	The bot searches within student notes using Vector Embeddings
-🤖 LLM Answering	Generates clear answers based on retrieved document chunks
-💾 Persistent Memory	Saves embeddings so notes don’t have to be uploaded again
-💬 Chat History	Maintains conversation context
-🔐 Login System	Only registered users can access chatbot
-🧱 Tech Stack
+---
 
-Python
+## ✨ Key Features
 
-Streamlit (Frontend UI)
+| Feature | Description |
+|--------|-------------|
+| 📄 **PDF Upload** | Upload your lecture notes, slides, or subject PDFs |
+| 🔍 **RAG Search** | Bot retrieves the **exact relevant content** from your notes |
+| 🤖 **AI Answer Generation** | Uses an LLM to provide **clear, structured answers** |
+| 💾 **Persistent Vector Storage** | Your uploaded notes are saved — no need to re-upload |
+| 💬 **Conversation Memory** | The chatbot remembers previous chat context |
+| 🔐 **User Authentication** | Only registered students can access the chatbot |
 
-LangChain
+---
 
-FAISS (Vector Database)
+## 🧱 Tech Stack
 
-Sentence Transformer Embeddings
+| Component | Technology |
+|----------|------------|
+| Frontend UI | **Streamlit** |
+| Document Loader | **PyPDF / LangChain** |
+| Text Embeddings | **Sentence Transformer (MiniLM)** |
+| Vector Database | **FAISS** |
+| LLM Model | **OpenAI / (Optional) Groq LLaMA, Mixtral** |
+| Backend Development | **Python** |
 
-OpenAI / GPT Model (or any LLM you choose)
+---
 
-📂 Project Structure
-student_chatbot/
-│── app.py                      # Main Streamlit App
-│── users.json                  # Login credentials
-│── vectorstore/                # Auto-generated vector embeddings (FAISS)
-│── requirements.txt            # Dependencies list
-│── README.md                   # Project documentation
+
+## 📂 Project Structure
+
